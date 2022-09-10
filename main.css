@@ -9,9 +9,7 @@ h1.title {
     color: #333;
     text-align: center;
 }
-.container {
 
-}
 .idols {
     display: flex;
     flex-wrap: wrap;
@@ -41,21 +39,21 @@ h1.title {
     width: 125%;
     height: 125%;
     background-size: cover;
-    transform: translateX(-10px) skewX(10deg);
+    transform: translateX(-8px) translateY(-10px) skewX(10deg);
     background-position: center;
 }
 .idol:nth-child(1) .image {
-    background-image: url("https://file2.nocutnews.co.kr/newsroom/image/2019/11/09/20191109174456931896_0_800_522.jpg");
+    background-image: url("http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/957/380/80957380_1655889158949_5_600x600.JPG");
 }
 .idol:nth-child(2) .image {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqk9HYrcsOldqUrV0ZEEDS_Zw595l6P5mcaA&usqp=CAU");
+    background-image: url("http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/957/380/80957380_1620871109036_3_600x600.JPG");
 }
 .idol:nth-child(3) .image {
-    background-image: url("https://pbs.twimg.com/media/FLnq8JaVUAcsE9C?format=jpg&name=large");
+    background-image: url("https://www.aespaclub.com/wp-content/uploads/2022/07/291588455_791621548853745_5775399119427753539_n-600x600.jpg");
 }
 .idol:nth-child(4) .image {
-    background-image: url("https://cdnweb01.wikitree.co.kr/webdata/editor/202112/27/img_20211227182750_bd8f046b.webp");
+    background-image: url("http://i.maniadb.com/images/artist/466/466809.jpg");
 }
 .idol:nth-child(5) .image {
-    background-image: url("https://image.kmib.co.kr/online_image/2017/0205/201702051028_61180011244778_1.jpg");
+    background-image: url("https://i1.sndcdn.com/artworks-TQNSaWR7EAiXIrag-YwyzHw-t500x500.jpg");
 }
