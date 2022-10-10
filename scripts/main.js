@@ -14,7 +14,24 @@ searchInput.addEventListener('focus', function () {
 searchInput.addEventListener('blur', function() {
     search.classList.remove('focused');
     searchInput.setAttribute('placeholder', '');
-})
+});
+
+// BADGE
+const badges = document.querySelector('header .badges');
+
+window.addEventListener('scroll', function () {
+    if (this.scrollY > 500) {
+        gsap.to(badges, .6, {
+            opacity: 0,
+            display: 'none'
+        });
+    } else {
+        gsap.to(badges, .6, {
+            opacity: 1,
+            display: 'block'
+        });
+    }
+});
 
 // BODY
 const doors = document.querySelectorAll('.idol');
