@@ -41,16 +41,23 @@ doors.forEach(function(door, index) {
     door.addEventListener('click', function () {
         switch (index) {
             case 0:
-                console.log(door.textContent);
+                alert(door.textContent);
                 break;
             case 1:
-                console.log(door, index);
+                alert(door, index);
                 break;
             case 2:
-                console.log(index);
+                alert(index);
                 break;
             case 3:
-                window.location.href = "/karina";
+                let text;
+                let person = prompt("Please enter your name:", "");
+                if (person == null || person == "") {
+                    text = "User cancelled the prompt.";
+                } else {
+                    text = "Hello " + person + "! How are you today?";
+                }
+                alert(text);
                 break;
             default:
                 console.log("wrong index");
