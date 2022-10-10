@@ -16,7 +16,7 @@ searchInput.addEventListener('blur', function() {
     searchInput.setAttribute('placeholder', '');
 })
 
-// 
+// BODY
 const doors = document.querySelectorAll('.idol');
 
 doors.forEach(function(door, index) {
