@@ -43,6 +43,13 @@ fadeEls.forEach(function (fadeEl, index) {
     });
 });
 
+// SWIPER
+new Swiper('.swiper', {
+    direction: 'verticle',
+    autoplay: true,
+    loop: true
+});
+
 // BODY
 const doors = document.querySelectorAll('.idol');
 
