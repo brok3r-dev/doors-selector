@@ -38,16 +38,32 @@ const fadeEls = document.querySelectorAll('.visual .fade-in');
 
 fadeEls.forEach(function (fadeEl, index) {
     gsap.to(fadeEl, 1, {
-        delay: (index + 1) * .7,
+        delay: (index + 1) * .3,
         opacity: 1
     });
 });
 
 // SWIPER
-new Swiper('.swiper', {
-    direction: 'verticle',
+new Swiper('.notice .swiper', {
+    direction: 'vertical',
     autoplay: true,
     loop: true
+});
+
+new Swiper('.promotion .swiper', {
+    autoplay: true,
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    pagination: {
+        el: '.promotion .swiper-pagination',
+        // clickable: true
+    },
+    navigation: {
+        prevEl: '.promotion .swiper-button-prev',
+        nextEl: '.promotion .swiper-button-next'
+    }
 });
 
 // BODY
