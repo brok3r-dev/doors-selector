@@ -66,6 +66,17 @@ new Swiper('.promotion .swiper', {
     }
 });
 
+const promotionEl = document.querySelector('section.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+
+promotionToggleBtn.addEventListener('click', function () {
+    if (promotionEl.classList.contains('hide')) {
+        promotionEl.classList.remove('hide');
+    } else {
+        promotionEl.classList.add('hide');
+    }
+});
+
 // BODY
 const doors = document.querySelectorAll('.idol');
 

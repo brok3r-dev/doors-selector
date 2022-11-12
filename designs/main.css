@@ -401,6 +401,11 @@ header .badges .badge img {
     overflow: hidden;
     position: relative;
     height: 550px;
+    transition: .4s;
+}
+
+.promotion.hide {
+    height: 0;
 }
 
 .promotion .swiper {
@@ -432,7 +437,7 @@ header .badges .badge img {
 }
 
 .promotion .swiper-pagination .swiper-pagination-bullet {
-    background-color: orange;
+    background-color: black;
     width: 8px;
     height: 8px;
     margin-right: 6px;
@@ -446,17 +451,18 @@ header .badges .badge img {
 .promotion .swiper-button-next {
     width: 30px;
     height: 30px;
-    border: 2px solid orange;
+    border: 2px solid black;
     border-radius: 50%;
     top: 48%;
     z-index: 1;
-    color: orange;
+    color: black;
 }
 
 .promotion .swiper-button-prev:hover,
 .promotion .swiper-button-next:hover {
     background-color: black;
-    border: 2px solid black;
+    border: 2px solid white;
+    color: white;
 }
 
 .promotion .swiper-button-prev::after,
