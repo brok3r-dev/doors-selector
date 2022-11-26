@@ -77,6 +77,58 @@ promotionToggleBtn.addEventListener('click', function () {
     }
 });
 
+// YOUTUBE
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubeIframeAPIReady() {
+  new YT.Player('player', {
+    videoId: 'Ji4ctPMlSVI',
+    playerVars: {
+        autoplay: true,
+        loop: true,
+        playlist: 'Ji4ctPMlSVI'
+    },
+    events: {
+        onReady: function (event) {
+            // event.target.mute()
+        }
+    }
+  });
+}
+
+gsap.to('.youtube .inner .floating1', 1.5, {
+    delay: 1.5,
+    x: 10,
+    y: 15,
+    opacity: 0.5,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut
+});
+
+gsap.to('.youtube .inner .floating2', 1, {
+    delay: 1,
+    x: -5,
+    opacity: 0.5,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut
+});
+
+gsap.to('.youtube .inner .floating3', 2, {
+    delay: 2,
+    x: -5,
+    y: -10,
+    opacity: 0.5,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut
+});
+
 // BODY
 const doors = document.querySelectorAll('.idol');
 
